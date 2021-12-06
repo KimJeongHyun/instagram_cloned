@@ -1,0 +1,309 @@
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+footer{
+    text-align:center;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    padding:30px;
+}
+
+#landingContainer{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;    
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+#landingArticle{
+    max-width: 935px;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:32px auto 0;
+    padding-bottom:32px;
+}
+
+#landingArticle #imgBox{
+    width:336px;
+    height:618px;
+    align-self:center;
+    background-image:url('../images/unsplash_instagram.png');
+    background-size:contain;
+    margin-right:15px;
+    margin-left:-35px;
+}
+
+#landingArticle #loginBox{
+    max-width:350px;
+    color: rgba(var(--i1d,38,38,38),1);
+    flex-grow:1;
+    margin-top:30px;
+}
+
+#landingArticle #loginBox header{
+    justify-content: center;
+    align-items: center;
+    font-size:52px;
+    font-family:'Billabong', sans-serif;
+    margin:22px auto 30px;
+}
+
+#landingArticle #loginBox #forgetPw{
+    text-align: center;
+    color:#385185;
+    font-size:12px;
+    cursor:pointer;
+    margin-top:12px;
+    margin-bottom:6px;
+
+}
+
+#landingArticle #loginBox #inputBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border:1px solid lightgrey; 
+}
+
+#landingArticle #loginBox #inputBox .loginInput{
+    -webkit-box-pack:center;
+    border: 0.5px solid lightgray;
+    border-radius:2px;
+    background:rgba(var(--b3f,250,250,250),1);
+    color: rgba(var(--i1d,38,38,38),1);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:12px;
+    margin:0 40px 10px;
+    padding:9px 0 11px 8px;
+}
+
+#landingArticle #loginBox #inputBox .loginBtn{
+    border:none;
+    border-radius:3px;
+    background-color: rgba(var(--d69,0,149,246),.3); 
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    margin:8px 40px;
+    padding:5px;
+}
+
+#landingArticle #loginBox #inputBox #loginHrContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 40px 18px;
+}
+#landingArticle #loginBox #inputBox #loginHrContainer .loginHR{
+    display:inline-block;
+    height:1px;
+    background-color:rgba(var(--b38,219,219,219),1);
+    flex-grow:1;
+}
+
+#landingArticle #loginBox #inputBox #loginHrContainer span{
+    font-weight:600;
+    font-size:13px;
+    margin:0 18px;
+    color: rgba(var(--f52,142,142,142),1);
+}
+
+#landingArticle #loginBox #inputBox #inputBoxFooter{
+    text-align: center;
+    color:#385185;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-weight:600;
+    font-size:14px;
+    cursor:pointer;
+    margin:8px 40px;
+}
+
+
+#facebookLogo{
+    font-size:18px;
+}
+
+#landingArticle #loginBox #registerBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border:1px solid lightgrey; 
+    font-size:14px;
+    margin-top:12px;
+    padding:20px;
+
+}
+
+#landingArticle #loginBox #registerBox a{
+    text-decoration: none;
+    color:rgba(var(--d69,0,149,246),1);
+    font-weight:600;
+    margin-left:5px;
+}
+
+#mainContainer{
+    width:100%;
+    min-height:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;    
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+#mainContainer #navContainer{
+    width:100%;
+    height:60px;
+    position:fixed;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+
+#mainContainer #navContainer #navRowBar{
+    max-width:935px;
+    width:935px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContainer #navContainer #navRowBar header{
+    font-size:34px;
+    flex:1 0 127px;
+    font-family:'Billabong', sans-serif;
+}
+
+#mainContainer #navContainer #navRowBar #mainSearchInput{
+    width:268px;
+    height:36px;
+    background: rgba(var(--b3f,250,250,250),1);
+    color: rgba(var(--f52,142,142,142),1);
+    border: solid 1px rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: text;
+    padding-left:24px;
+    transition:0.3s ease;
+}
+
+#mainContainer #navContainer #navRowBar #searchIcon{
+    position:absolute;
+    font-size:12px;
+    color:#8d8d8d;
+    left:605px;
+}
+
+#mainContainer #navContainer #navRowBar #navBtns{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex:1 0 127px;
+    font-size:25px;
+}
+
+#mainContainer #navContainer #navRowBar #navBtns i{
+    margin-right:23px;
+}
+
+#mainContainer #navContainer #navRowBar #navBtns #profileImg{
+    width:28px;
+    height:28px;
+    background-image:url('../images/jh_profile.jpg');
+    background-size:28px 28px;
+    border-radius:50%;
+
+}
+
+#mainContainer #bodyContainer{
+    max-width:935px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    padding-top:60px;
+}
+
+#mainContainer #bodyContainer #feedContainer{
+    max-width:605px;
+    width:100%;
+    float:left;
+    margin-right:28px;
+}
+
+#mainContainer #bodyContainer #feedContainer #friendsFeed{
+    background: rgba(var(--d87,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius:3px;
+    margin:26px 0;
+    padding:2px 0;
+}
+
+#mainContainer #bodyContainer #feedContainer #friendsFeed ul{
+    display:flex;
+    flex-direction: row;
+    list-style-type:none;
+    padding-left:20px;
+    
+}
+
+#mainContainer #bodyContainer #feedContainer #friendsFeed ul li{
+    margin-right:18px;
+    text-align: center;
+}
+
+#mainContainer #bodyContainer #feedContainer #friendsFeed ul li #friendImgBorder{
+    border-radius:50%;
+    border:3px solid transparent;
+    width:58px;
+    height:58px;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #f0d798, #f26265);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display:flex;
+    justify-content: center;
+    
+}
+
+#mainContainer #bodyContainer #feedContainer #friendsFeed ul li #friendImgBorder #friendImg{
+    width:55px;
+    height:55px;
+    background-image:url('../images/jh_profile.jpg');
+    background-size:55px 55px;
+    background-repeat:no-repeat;
+    border-radius:50%;
+    margin-top:1px;
+}
+
+#mainContainer #bodyContainer #feedContainer #feeds{
+    background: rgba(var(--d87,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    width:100%;
+    height:600px;
+    min-height:inherit;
+    margin-bottom:100px;
+}
+
+#mainContainer #bodyContainer #sideContainer{
+    max-width:293px;
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:94px;
+    left:42vw;
+    margin-bottom:30px;
+    padding:0;
+}
