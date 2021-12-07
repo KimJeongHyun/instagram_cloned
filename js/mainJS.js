@@ -1,13 +1,19 @@
 window.addEventListener('resize',function(event){
     const sideWrapper = document.querySelector('#sideWrapper')
+    const bodyContainer = document.querySelector('#bodyContainer');
     if (window.innerWidth<=627){
         document.getElementById('navRowBarSearch').style.display='none'
     }else{
         document.getElementById('navRowBarSearch').style.display='inline-block'
-        if (window.innerWidth<=1001){
+        if (window.innerWidth<=1001 && window.innerWidth>690){
             sideWrapper.style.display='none'
+            bodyContainer.style.marginLeft='7vw'
+        }else if(window.innerWidth<=690){
+            sideWrapper.style.display='none'
+            bodyContainer.style.marginLeft='0vw'
         }else{
-            sideWrapper.style.display='block'
+            bodyContainer.style.marginLeft='0px'
+            sideWrapper.style.display='block'   
         }
     }
 })
