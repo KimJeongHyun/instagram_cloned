@@ -1,3 +1,17 @@
+window.addEventListener('resize',function(event){
+    const sideWrapper = document.querySelector('#sideWrapper')
+    if (window.innerWidth<=627){
+        document.getElementById('navRowBarSearch').style.display='none'
+    }else{
+        document.getElementById('navRowBarSearch').style.display='inline-block'
+        if (window.innerWidth<=1001){
+            sideWrapper.style.display='none'
+        }else{
+            sideWrapper.style.display='block'
+        }
+    }
+})
+
 document.getElementById('mainSearchInput').addEventListener('focusin',function(event){
     const searchInput = document.getElementById('mainSearchInput');
     const searchIcon = document.getElementById('searchIcon');
@@ -8,7 +22,7 @@ document.getElementById('mainSearchInput').addEventListener('focusin',function(e
 document.getElementById('mainSearchInput').addEventListener('focusout',function(event){
     const searchInput = document.getElementById('mainSearchInput');
     const searchIcon = document.getElementById('searchIcon');
-    searchIcon.style.display='block'
+    searchIcon.style.display='inline'
     searchInput.style.paddingLeft='30px'
 })
 

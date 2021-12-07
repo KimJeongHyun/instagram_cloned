@@ -11,8 +11,10 @@
             <article id='navContainer'>
                 <nav id='navRowBar'>
                     <header>Westagram</header>
-                    <i class="fas fa-search" id='searchIcon'></i>
-                    <input id='mainSearchInput' type='text' placeholder="검색">
+                    <div id='navRowBarSearch'>
+                        <i class="fas fa-search" id='searchIcon'></i>
+                        <input id='mainSearchInput' type='text' placeholder="검색">
+                    </div>
                     <section id='navBtns'>
                         <i class="fas fa-home"></i>
                         <i class="fas fa-location-arrow"></i>
@@ -196,94 +198,96 @@
                         </section>
                     </section>
                 </article>
-                <article id='sideContainer'>
-                    <section id='profileSwap'>
-                        <div id='profileSwapBox'>
-                            <div id='profileImg'></div>
-                            <div id='profileInfo'>
-                                <a href='#!'>lIlIlIlI</a>
-                                <a>김정현</a>
+                <article id='sideWrapper'>
+                    <section id='sideContainer'>
+                        <section id='profileSwap'>
+                            <div id='profileSwapBox'>
+                                <div id='profileImg'></div>
+                                <div id='profileInfo'>
+                                    <a href='#!'>lIlIlIlI</a>
+                                    <a>김정현</a>
+                                </div>
+                                <button id='profileSwapBtn'>전환</button>
                             </div>
-                            <button id='profileSwapBtn'>전환</button>
-                        </div>
+                        </section>
+                        <section id='recommendFriends'>
+                            <div id='recommendTextBar'>
+                                <span>회원님을 위한 추천</span>
+                                <a>모두 보기</a>
+                            </div>
+                            <div id='recommendFriendList'>
+                                <ul>
+                                    <li id='recommendFriendListTag'>
+                                        <div class='recommendFriendImg'>
+                                            
+                                        </div>
+                                        <div class='recommendFriendInfo'>
+                                            <span class='recommendFriendID'>friends1</span>
+                                            <span class='followOrNot'>abcdefghijklmnop님 외 n명이 팔로우합니다.</span>
+                                        </div>
+                                    </li>
+                                    <li id='recommendFriendListTag'>
+                                        <div class='recommendFriendImg'>
+                                            
+                                        </div>
+                                        <div class='recommendFriendInfo'>
+                                            <span class='recommendFriendID'>friends2</span>
+                                            <span class='followOrNot'>회원님을 팔로우합니다.</span>
+                                        </div>
+                                    </li>
+                                    <li id='recommendFriendListTag'>
+                                        <div class='recommendFriendImg'>
+                                            
+                                        </div>
+                                        <div class='recommendFriendInfo'>
+                                            <span class='recommendFriendID'>friends3</span>
+                                            <span class='followOrNot'>strong_strawberry님 외 n명이 팔로우합니다.</span>
+                                        </div>
+                                    </li>
+                                    <li id='recommendFriendListTag'>
+                                        <div class='recommendFriendImg'>
+                                            
+                                        </div>
+                                        <div class='recommendFriendInfo'>
+                                            <span class='recommendFriendID'>friends4</span>
+                                            <span class='followOrNot'>회원님을 팔로우합니다.</span>
+                                        </div>
+                                    </li>
+                                    <li id='recommendFriendListTag'>
+                                        <div class='recommendFriendImg'>
+                                            
+                                        </div>
+                                        <div class='recommendFriendInfo'>
+                                            <span class='recommendFriendID'>friends5</span>
+                                            <span class='followOrNot'>회원님을 팔로우합니다.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section id='sideFooter'>
+                            <div id='sideFooterTextBar'>
+                                <span id='sideFooterPartText'>소개</span>
+                                <span id='sideFooterPartText'>도움말</span>
+                                <span id='sideFooterPartText'>홍보 센터</span>
+                                <span id='sideFooterPartText'>API</span>
+                                <span id='sideFooterPartTextEnd'>채용 정보</span>
+                            </div>
+                            <div id='sideFooterTextBar'>
+                                <span id='sideFooterPartText'>개인정보처리방침</span>
+                                <span id='sideFooterPartText'>약관</span>
+                                <span id='sideFooterPartText'>위치</span>
+                                <span id='sideFooterPartText'>인기 계정</span>
+                                <span id='sideFooterPartText'>해시태그</span>
+                                <span id='sideFooterPartTextEnd'>언어</span>
+                            </div>
+                            <div id='sideFooterBottom'>
+                                <span>© 2021 WESTAGRAM FROM KJH</span>
+                            </div>
+                            
+                        </section>
                     </section>
-                    <section id='recommendFriends'>
-                        <div id='recommendTextBar'>
-                            <span>회원님을 위한 추천</span>
-                            <a>모두 보기</a>
-                        </div>
-                        <div id='recommendFriendList'>
-                            <ul>
-                                <li id='recommendFriendListTag'>
-                                    <div class='recommendFriendImg'>
-                                        
-                                    </div>
-                                    <div class='recommendFriendInfo'>
-                                        <span class='recommendFriendID'>friends1</span>
-                                        <span class='followOrNot'>abcdefghijklmnop님 외 n명이 팔로우합니다.</span>
-                                    </div>
-                                </li>
-                                <li id='recommendFriendListTag'>
-                                    <div class='recommendFriendImg'>
-                                        
-                                    </div>
-                                    <div class='recommendFriendInfo'>
-                                        <span class='recommendFriendID'>friends2</span>
-                                        <span class='followOrNot'>회원님을 팔로우합니다.</span>
-                                    </div>
-                                </li>
-                                <li id='recommendFriendListTag'>
-                                    <div class='recommendFriendImg'>
-                                        
-                                    </div>
-                                    <div class='recommendFriendInfo'>
-                                        <span class='recommendFriendID'>friends3</span>
-                                        <span class='followOrNot'>strong_strawberry님 외 n명이 팔로우합니다.</span>
-                                    </div>
-                                </li>
-                                <li id='recommendFriendListTag'>
-                                    <div class='recommendFriendImg'>
-                                        
-                                    </div>
-                                    <div class='recommendFriendInfo'>
-                                        <span class='recommendFriendID'>friends4</span>
-                                        <span class='followOrNot'>회원님을 팔로우합니다.</span>
-                                    </div>
-                                </li>
-                                <li id='recommendFriendListTag'>
-                                    <div class='recommendFriendImg'>
-                                        
-                                    </div>
-                                    <div class='recommendFriendInfo'>
-                                        <span class='recommendFriendID'>friends5</span>
-                                        <span class='followOrNot'>회원님을 팔로우합니다.</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section id='sideFooter'>
-                        <div id='sideFooterTextBar'>
-                            <span id='sideFooterPartText'>소개</span>
-                            <span id='sideFooterPartText'>도움말</span>
-                            <span id='sideFooterPartText'>홍보 센터</span>
-                            <span id='sideFooterPartText'>API</span>
-                            <span id='sideFooterPartTextEnd'>채용 정보</span>
-                        </div>
-                        <div id='sideFooterTextBar'>
-                            <span id='sideFooterPartText'>개인정보처리방침</span>
-                            <span id='sideFooterPartText'>약관</span>
-                            <span id='sideFooterPartText'>위치</span>
-                            <span id='sideFooterPartText'>인기 계정</span>
-                            <span id='sideFooterPartText'>해시태그</span>
-                            <span id='sideFooterPartTextEnd'>언어</span>
-                        </div>
-                        <div id='sideFooterBottom'>
-                            <span>© 2021 WESTAGRAM FROM KJH</span>
-                        </div>
-                        
-                    </section>
-
+                    
                 </article>
             </article>
         </main>
