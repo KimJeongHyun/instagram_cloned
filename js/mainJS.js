@@ -73,7 +73,7 @@ const setInputCommentsSubmitBtnEvent = () =>{
 setInputCommentsSubmitBtnEvent();
 
 document.getElementById('inputCommentsTextarea').addEventListener('keydown',function(event){
-    if (event.key=='Enter' && event.target.value.length>0){
+    if (event.key==='Enter' && event.target.value.length>0){
         addFeedComment(event);
     }
 })
